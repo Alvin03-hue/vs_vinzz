@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #000;
+        }
+
+        header h1 {
+            color: #ff3c00;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3c00;
+        }
+
+        .hero {
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #ff3c00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e63300;
+        }
+
+        .cars {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .cars h2 {
+            margin-bottom: 30px;
+        }
+
+        .car-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AutoDrive</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cars</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Drive Your Dream Car</h2>
+        <p>Experience power, luxury, and performance</p>
+        <a href="#" class="btn">Explore Cars</a>
+    </div>
+</section>
+
+<section class="cars">
+    <h2>Our Featured Cars</h2>
+    <div class="car-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Car">
+            <h3>Sports Car</h3>
+            <p>High performance and speed</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="Car">
+            <h3>Luxury Sedan</h3>
+            <p>Comfort and elegance</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Car">
+            <h3>SUV</h3>
+            <p>Powerful and spacious</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AutoDrive. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
